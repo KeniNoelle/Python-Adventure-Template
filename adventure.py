@@ -17,9 +17,9 @@ def clear_screen():
     os.system('cls' if os.name=='nt' else 'clear')
 
 def title():
-    print(text2art('Earth', font='alpha'))
-    print(text2art('  Lab', font='alpha'))
-    print(text2art(' Hero', font='alpha'))
+    print(text2art('Day', font='alpha'))
+    print(text2art('  of', font='alpha'))
+    print(text2art(' Magic', font='alpha'))
 
 def north():
     print ("To go north press n then enter")
@@ -73,7 +73,10 @@ def enemy():
     enemyname = "Dragon"
     print ("\nSuddenly you hear a roar, and from the sky you see an "+enemyname+" coming straight at you....")
     #print enemyname
+    import time
+    time.sleep(2)
     print ("Your enemy has %s Health Points" % str(enemyHP))
+    time.sleep(5)
     print ("Your enemy has %s Magic Points" % str(enemyMP))
 
 
@@ -111,7 +114,17 @@ if input() == "y":
         print ("Armed with your %s and %s you swing open the door to your room, out of your house, and see a green field gleaming in the sunshine." % (weapons[0], weapons[1]))
     else:
         print ("You choose not to take your weapons")
-        print ("Armed with your sense of humour, You swing open the door to see a your school, where you learn.")
+        print ("You open the door to the stairs and begin to walk.")
+        print ("You here an odd noise to the right of you while on the stairs. Would you like to instinctivly look in it's direction for a split second while you continue your main task?")
+        if input() == "y":
+            print ("You aren't looking where you are going while on the stairs.")
+            print ("You trip and fall to your death.")
+            print ("Game Over (obviously)")
+            sys.exit(0)
+        else:
+            print ("Good choice.")
+
+
 else:
     print ("You stay in your room, sat at your desk and do your homework. You die of boredom.")
     print ("Game Over")
