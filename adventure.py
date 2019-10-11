@@ -73,10 +73,9 @@ def enemy():
     enemyname = "Dragon"
     print ("\nSuddenly you hear a roar, and from the sky you see an "+enemyname+" coming straight at you....")
     #print enemyname
-    import time
-    time.sleep(2)
+    sleep(2)
     print ("Your enemy has %s Health Points" % str(enemyHP))
-    time.sleep(5)
+    sleep(5)
     print ("Your enemy has %s Magic Points" % str(enemyMP))
 
 
@@ -126,7 +125,7 @@ if input() == "y":
 
 
 else:
-    print ("You stay in your room, sat at your desk and do your homework. You die of boredom.")
+    print ("You stay in your room, sitting at your desk and do your homework. You die of boredom.")
     print ("Game Over")
     sys.exit(0)
 
@@ -140,6 +139,7 @@ west()
 move = input("Where would you like to go? ")
 if move == 'n':
     print ("\nYou move to the north, walking under the cloudy sky.")
+    print ("You see you're friend ")
     print ("A student is in your path and greets you")
 #elif is short for Else If and it means that if the previous condition is false, to check this condition to see if that is true.
 elif move == 'e':
