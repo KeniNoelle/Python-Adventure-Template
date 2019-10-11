@@ -143,7 +143,7 @@ if move == 'n':
     print ("A student is in your path and greets you")
 #elif is short for Else If and it means that if the previous condition is false, to check this condition to see if that is true.
 elif move == 'e':
-    print ("\nYou walk to the wavering wook which sucks, why did you go there? Anyways...")
+    print ("\nYou walk to the wavering wood which sucks, why did you go there? Anyways...")
     print ("A student is in your path and greets you")
 elif move == 'w':
     print ("\nYou walk to the weeping tower, stopping to reget your descision wondering what you think you're doing. What are you planning on doing, seeing the mage? No one likes the mage!")
