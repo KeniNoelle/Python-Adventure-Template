@@ -73,9 +73,7 @@ def enemy():
     enemyname = "Dragon"
     print ("\nSuddenly you hear a roar, and from the sky you see an "+enemyname+" coming straight at you....")
     #print enemyname
-    sleep(2)
     print ("Your enemy has %s Health Points" % str(enemyHP))
-    sleep(5)
     print ("Your enemy has %s Magic Points" % str(enemyMP))
 
 
@@ -148,6 +146,29 @@ elif move == 'e':
 elif move == 'w':
     print ("\nYou walk to the weeping tower, stopping to reget your descision wondering what you think you're doing. What are you planning on doing, seeing the mage? No one likes the mage!")
     print ("A student is in your path and greets you\n")
+else:
+    print ("a rebel huh. you've unlocked a bonus quest!")
+    print ("suddenly a portal opens on the ground a step ahead of you. Input 'y' to step through.")
+    if input == "y"
+        print ("you fall through the multiverse, viewing many different realities as you fall.")
+        print ("It appears that you can enter whichever you please. But for the simplicity of this game I'm only going to give you three options.")
+        print ("You see a majestic unicorn in the portal to you're right, to you're left you catch a glimpse of Scott lang holding his dead daughter surrounded by the Young Avengers with the Avengers and X-Men standing nearby with a look of guilt as they know this is all their fault and that if they had just listened to Wiccan none of this would have happened, and below you you see yourself in this very moment.")
+        print ("To go right input r")
+        print ("To go left input l")
+        print ("To go down input d")
+
+
+    else:
+        print ("Really?")
+        sleep(2)
+        print ("You're a coward, you know that?!?!")
+        sleep(2)
+        print ("No more game for you.")
+        print (":(")
+        sys.exit(0)
+
+
+
 
 villager()
 enemy()
@@ -161,10 +182,13 @@ if fight == "y":
         hit = randint(0,5)
         print ("You cast a spell and cause %s of damage" % str(hit))
         enemyHP = enemyHP - hit
+        sleep(2)
         print (enemyHP)
         enemyhit = randint(0,5)
+        sleep(2)
         print ("The dragon breathes fire at you at you and causes %s of damage" % str(enemyhit))
         HP = HP - enemyhit
+        sleep(2)
         print (HP)
 else:
     print ("You turn and run away from the dragon, like a sensible person, let Simon Snow handle that.")
