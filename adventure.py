@@ -76,6 +76,31 @@ def enemy():
     print ("Your enemy has %s Health Points" % str(enemyHP))
     print ("Your enemy has %s Magic Points" % str(enemyMP))
 
+def unicorn():
+    print ("You glide through the portal to your right and sure enough there is a unicorn waiting for you.")
+    print ("To pet the pretty pony input p")
+    print ("To greet the beast as you would a friend input g")
+    if input() == "p":
+        print("You have offended the unicorn.")
+        sleep(4)
+        print("The unicorn seeks revenge.")
+        sleep(4)
+        print("The unicorn spears you through you're stomache with it's noble horn.")
+        sleep(4)
+        print("You bleed out slowly, unable to move, not even in your own dimension.")
+        sleep(4)
+        print("How tragic.")
+        sys.exit(0)
+    elif input() == "g":
+        print("The unicort stands up on it's hind legs and greets you holding out it's hoove for you to shake")
+        print("")
+
+def deadCassie():
+    print ("deargodihopethisworks")
+
+def glitchinthematrix():
+    print ("hoty")
+
 
 """
     We now use our functions in the game code, we call functions title() and setup() for our character.
@@ -149,15 +174,22 @@ elif move == 'w':
 else:
     print ("a rebel huh. you've unlocked a bonus quest!")
     print ("suddenly a portal opens on the ground a step ahead of you. Input 'y' to step through.")
-    if input == "y"
+    if input() == "y":
         print ("you fall through the multiverse, viewing many different realities as you fall.")
         print ("It appears that you can enter whichever you please. But for the simplicity of this game I'm only going to give you three options.")
         print ("You see a majestic unicorn in the portal to you're right, to you're left you catch a glimpse of Scott lang holding his dead daughter surrounded by the Young Avengers with the Avengers and X-Men standing nearby with a look of guilt as they know this is all their fault and that if they had just listened to Wiccan none of this would have happened, and below you you see yourself in this very moment.")
         print ("To go right input r")
         print ("To go left input l")
         print ("To go down input d")
-
-
+        if input() == "r":
+            unicorn()
+        elif input() == "l":
+            deadCassie()
+        elif input() == "d":
+            glitchinthematrix()
+        else:
+            print("im actually mad u pulled that")
+            sys.exit(0)
     else:
         print ("Really?")
         sleep(2)
