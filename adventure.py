@@ -76,6 +76,37 @@ def enemy():
     print ("Your enemy has %s Health Points" % str(enemyHP))
     print ("Your enemy has %s Magic Points" % str(enemyMP))
 
+def villager():
+    #This will create a randomly named Villager to interact with
+    global npcname
+    global response
+    #Below is a list, we can store lots of things in a list and then retrieve them later.
+    responses = ["Hi", "Are you a student here?", "What year are you in?", "The humdrum sent a dragon!"]
+    npcnamechoice = ["Penelope", "Simon", "Agatha", "Tyrannus Basilton Grimm-Pitch"]
+    #Shuffle will shuffle the list contents into a random order.
+    shuffle(npcnamechoice)
+    npcname = npcnamechoice[0]
+    print ("\n["+npcname+":] Hello, my name is "+npcname+", Would you like to talk to me?\n")
+    shuffle(responses)
+    print ("Press y to talk to the student")
+    if input() == "y":
+        print ("%s: %s" % (npcname, responses[0]))
+    else:
+        print ("%s: Goodbye" % npcname)
+
+def enemy():
+    global enemyHP
+    global enemyMP
+    global enemyname
+    enemyHP = randint(5,20)
+    enemyMP = randint(5,20)
+    #Below is the enemy's name, perhaps you could change this to a list and then shuffle the list, such as we did for the villager above.
+    enemyname = "Dragon"
+    print ("\nSuddenly you hear a roar, and from the sky you see an "+enemyname+" coming straight at you....")
+    #print enemyname
+    print ("Your enemy has %s Health Points" % str(enemyHP))
+    print ("Your enemy has %s Magic Points" % str(enemyMP))
+
 def unicorn():
     print ("You glide through the portal to your right and sure enough there is a unicorn waiting for you.")
     print ("To pet the pretty pony input p")
@@ -92,14 +123,36 @@ def unicorn():
         print("How tragic.")
         sys.exit(0)
     elif input() == "g":
-        print("The unicort stands up on it's hind legs and greets you holding out it's hoove for you to shake")
-        print("")
+        print("The unicorn stands up on it's hind legs and greets you holding out it's hoove for you to shake")
+        print("Input y to shake the unicorn's hoove.")
+        if input() == "y":
+            print("The unicorn says it want's to marry you. Input y to marry the unicorn.")
+            if input() == "y":
+                print("You live happily ever after.")
+                sys.exit(0)
+            else:
+                print("The unicorn kills you for wasting it's time.")
+                sys.exit(0)
+        else:
+            print("The unicorn is becoming enraged. You have two options, run or die.")
+            print("Input r to run")
+            print("Input d to die")
+            if input() == "r":
+                print("You run in a random direction into this strange land, which turns out to be mostly forest.")
+                print("You slowly die of not knowing how to survive in the wild.")
+                sys.exit(0)
+            elif input() == "d"
+                print("Okay.")
+                sys.exit(0)
 
 def deadCassie():
-    print ("deargodihopethisworks")
+    print ("Scott Summers (the jerk that he is) blasts you and you die.")
+    sys.exit(0)
 
 def glitchinthematrix():
-    print ("hoty")
+    print("Your soul which was previously playing this game has now re-entered your body.")
+    print("Now get up and go live you're life.")
+    sys.exit(0)
 
 
 """
