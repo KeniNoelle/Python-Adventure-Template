@@ -17,9 +17,16 @@ def clear_screen():
     os.system('cls' if os.name=='nt' else 'clear')
 
 def title():
-    print(text2art('Day', font='alpha'))
-    print(text2art('  of', font='alpha'))
-    print(text2art(' Magic', font='alpha'))
+    print(text2art('Be', font='alpha'))
+    print(text2art('  a', font='alpha'))
+    print(text2art(' Rebel', font='alpha'))
+    print(text2art('But', font='alpha'))
+    print(text2art('Not', font='alpha'))
+    print(text2art('Too', font='alpha'))
+    print(text2art('Much', font='alpha'))
+
+
+
 
 def north():
     print ("To go north press n then enter")
@@ -141,13 +148,17 @@ def unicorn():
                 print("You run in a random direction into this strange land, which turns out to be mostly forest.")
                 print("You slowly die of not knowing how to survive in the wild.")
                 sys.exit(0)
-            elif input() == "d"
+            elif input() == "d":
                 print("Okay.")
                 sys.exit(0)
 
 def deadCassie():
-    print ("Scott Summers (the jerk that he is) blasts you and you die.")
-    sys.exit(0)
+    print("Would you like to hide? Input y to hide.")
+    if input() == "y":
+        print("Scott Summers (the jerk that he is) catches you, blasts you and you die.")
+        sys.exit(0)
+    else:
+        print("yee")
 
 def glitchinthematrix():
     print("Your soul which was previously playing this game has now re-entered your body.")
@@ -278,22 +289,31 @@ if fight == "y":
 else:
     print ("You turn and run away from the dragon, like a sensible person, let Simon Snow handle that.")
 
-print ("This is where this template ends, this is now YOUR world, build your adventure and share it with the world")
 
-print ("   _       _                 _")
-print ("  /_\   __| |_   _____ _ __ | |_ _   _ _ __ ___")
-print (" //_\\ / _` \ \ / / _ \ '_ \| __| | | | '__/ _ \ ")
-print ("/  _  \ (_| |\ V /  __/ | | | |_| |_| | | |  __/")
-print ("\_/ \_/\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|)")
+print ("   ,")
+print ("_,,)\.~,,._")
+print ("(()`  ``)\))),,_ ")
+print (" |     \ ''((\)))),,_          ____")
+print (" |6`   |   ''((\())) '-.____.-'    `-.-,")
+print (" |    .'\    ''))))'                  \)))")
+print (" |   |   `.     ''                     ((((")
+print (" \, _)     \/                          |))))")
+print ("  `'        |                          (((((")
+print ("            \                  |       ))))))")
+print ("             `|    |           ,\     /((((((")
+print ("              |   / `-.______.<  \   |  )))))")
+print ("              |   |  /         `. \  \  ((((")
+print ("              |  / \ |           `.\  | (((")
+print ("              \  | | |             )| |  ))")
+print ("               | | | |             || |  '")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
+print ("	           | | | |             || |  ")
 
-print ("                     _ _")
-print ("  __ ___      ____ _(_) |_ ___")
-print (" / _` \ \ /\ / / _` | | __/ __|")
-print ("| (_| |\ V  V / (_| | | |_\__ \ ")
-print (" \__,_| \_/\_/ \__,_|_|\__|___/)")
-
-print (" _   _  ___  _   _")
-print ("| | | |/ _ \| | | |")
-print ("| |_| | (_) | |_| |")
-print (" \__, |\___/ \__,_|")
-print (" |___/")
